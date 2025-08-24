@@ -1,4 +1,5 @@
 
+
 *{
     margin: 0%;
     padding: 0%;
@@ -82,8 +83,8 @@ img{
 .navbar--section__three{
     align-items: center;
     display: flex;
-    margin-left:400px ;
-    margin-right: 400px;
+    margin-left:280px ;
+    margin-right: 220px;
     gap:40px;
     margin-top: 40px;
   
@@ -108,7 +109,7 @@ img{
     text-shadow: 2px;
     border-radius: 40px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    margin-left: 400px;
+    margin-left: 280px;
 
     padding: 10px;
     
@@ -148,23 +149,348 @@ img{
   
 }
 .section2 .sec_cont {
-    top:200px;
+    top:80px;
     position: absolute;
 }
 .sec_cont h1{
- font-size: 100px;
+    margin-top: 0px;
+ font-size: 90px;
  margin-left: 100px;
 }
 .sec_cont p{
+    margin-top: 100px;
     font-size: 40px;
-    margin-left: 380px;
+    margin-left: 150px;
 }
  .sec_cont button{
     font-size: 20px;
     padding: 10px 30px;
     background-color: rgb(5, 5, 61);
     color: white;
-    margin-top: 50px;
-    margin-left: 650px;
+    margin-top: 80px;
+    margin-left: 570px;
     border-radius: 15px;
+ }
+ 
+/* interest */
+.interest{
+  margin:50px;
+  
+}
+.interest h2{
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.interest p{
+  font-size: 19px;
+  margin-left: 10px;
+
+  color: rgb(102, 102, 102);
+}
+.int-details{
+  display: flex;
+  justify-content: space-around;
+}
+.int-1{
+
+ width:280px;
+ height:250px;
+  background-image: url("./images/outdoor\ img.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  border-radius: 20px;
+
+}
+.int-2{
+    background-image:url("./images/food\ img\ \(2\).jfif");
+
+  width:280px;
+ height:250px;
+   background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+.int-3{
+   width:280px;
+ height:250px;
+   background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  border-radius: 20px;
+  background-image:url("./images/culture\ img.jfif"); 
+}
+.int-4{
+   width:280px;
+ height:250px;
+   background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  border-radius: 20px;
+  background-image: url("./images/Waterfall\ img.jfif");
+}
+.int-1 h1{
+  color:white;
+  font-size: 40px;
+  padding-top: 170px;
+padding-left: 30px;
+}
+.int-2 h1{
+  color:white;
+  font-size: 40px;
+  padding-top: 170px;
+padding-left: 30px;
+}
+.int-3 h1{
+  color:white;
+  font-size: 40px;
+  padding-top: 170px;
+padding-left: 30px;
+}
+.int-4 h1{
+  color:white;
+  font-size: 40px;
+  padding-top: 170px;
+padding-left: 30px;
+}
+.chennai{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.chennai-1{
+  width:280px
+}
+.chennai-1 img{
+  width:100%;
+  height:250px;
+  border-radius: 10px;
+}
+
+.trip-img{
+  width:100%;
+  height:500px;
+  border-radius: 20px;
+  position: relative;
+  z-index:1;
+}
+.trip-cnt{
+  position:absolute;
+  z-index:2;
+  top:2000px;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+.b-title{
+  font-size: 50px;
+  font-weight: bold;
+  
+}
+.b-para{
+  font-size: 20px;
+  padding: 10px;
+}
+.b-btn{
+  background-color: rgba(202, 202, 202, 0.829);
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  border:none;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+.inspire{
+  background-color: rgb(245, 243, 243);
+  padding: 30px;
+  
+}
+.inspire h2{
+  padding-left: 60px;
+}
+.in-1{
+  width:300px
+}
+.in-box{
+  margin: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.in-1 h3{
+  padding: 10px;
+}
+.in-1 img{
+  width: 100%;
+  height:250px;
+  border-radius: 20px;
+}
+/* Media Queries */
+
+/*MEDIUM SCREEN  */
+
+/* navbar */
+@media screen and (min-width:700px){
+
+
+.navbar{
+  display: grid;
+  grid-template-columns: 1fr 1fr 14fr;
+}
+.sign-in{
+  display: block;
+  float: inline-end;
+  
+  
+}
+.user{
+  display: none;
+}
+.heads{
+  display: block;
+}
+.search-bar{
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 10px 20px;
+}
+.search{
+width:100px;
+margin-top: 0px;
+  
+}
+.banner-cnt{
+  top:550px;
+}
+}
+
+/* LARGE SCREEN */
+
+/* NAVBAR */
+@media screen and (min-width:900px) {
+  .navbar{
+      display: flex;
+      justify-content: space-around;
+  }
+.nav-1{
+  display: none;
+}
+.menu-nav-2{
+  display: block;
+}
+.global-nav3{
+  display: flex;
+ justify-content: space-between;
+ align-items:center ;
+}
+.global-main{
+  display: flex;
+  align-items: center;
+}
+.sign-in{
+  margin-left: 20px;
+}
+.details{
+  overflow-x:auto;
+  justify-content: center;
+}
+
+.search-bar{
+  width:700px;
+margin:10px 320px;
+}
+.banner{
+  margin:50px 100px;
+}
+.banner-cnt{
+  top:600px;
+}
+.b-para{
+  font-size: 25px;
+  padding: 10px 80px 10px 2px;
+}
+
+  
+}
+.spons{
+  display: flex;
+  padding: 50px;
+  background-color: rgb(211, 205, 205);
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.img img{
+  width: 400px;
+  height: 400px;
+}
+
+.notes{
+  margin-left: 100px;
+}
+.notes h2{
+  margin-top: 20px;
+  font-size: 50px;
+  color:grey ;
+}
+.notes h1{
+  margin-top:60px ;
+  font-size: 40px;
+}
+.notes p{
+  margin-top: 20px;
+  font-size: 30px;
+}
+.notes button{
+  border: none;
+  font-size: 20px;
+  padding: 15px 25px;
+  margin-top: 20px;
+  margin-left: 100px;
+  background-color: rgb(173, 173, 151);
+}
+button:hover{
+  background-color: rgb(44, 44, 44);
+  color: white;
+  cursor: pointer;
+}
+.footer{
+  display: flex;
+ padding-top: 30px;
+  margin-top: 50px;
+ padding-bottom: 30px;
+  background-color: rgb(224, 224, 223);
+}
+.footer h2{
+  margin-bottom: 20px;
+  color: rgb(63, 63, 63);
+  cursor: pointer;
+}
+.footer ul li{
+  font-size: 20px;
+  margin-bottom: 2px;
+ 
+}
+.about ul li{
+  list-style-type: none;
+}
+.about {
+  margin-left: 100px;
+}
+.explore ul li{
+  list-style-type: none;
+}
+.explore{
+  margin-left: 100px;
+}
+.business ul li{
+  list-style-type: none;
+}
+.business{
+  margin-left: 100px;
+}
+.sites ul li{
+  list-style-type: none;
+}
+.sites{
+  margin-left: 100px;
 }
